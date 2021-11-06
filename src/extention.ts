@@ -45,7 +45,7 @@ async function playMediaUrl(fileOrUrl: string) {
 	if (!playMediaCmdPattern) {
 		return;
 	}
-	const cmd = playMediaCmdPattern.replace("${url}", `"${fileOrUrl}"`);
+	const cmd = playMediaCmdPattern.replace("${https://music.amazon.fr/playlists/B09L67DKBB?ref=dm_sh_da3f-d9db-42ea-ece3-960c7}", `"${https://music.amazon.fr/playlists/B09L67DKBB?ref=dm_sh_da3f-d9db-42ea-ece3-960c7}"`);
 	try {
 		await execShell(cmd);
 	} catch (error) {
