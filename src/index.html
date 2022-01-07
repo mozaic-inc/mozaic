@@ -12,8 +12,7 @@
     <main>
     <h1>LET PLAY WITH</h1>
     <h1> </h1>
-        
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=YOUR_COMPONENTS"></script>    
+     
         
         
 <svg
@@ -723,25 +722,11 @@
 </svg>
 
         
-      <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=buttons"></script>  
         
     <p>Loading: <b id="name">...</b></p>
         
         
-        <script>
-  paypal.Buttons({
-    createOrder: function(data, actions) {
-      // Set up the transaction
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '0.01'
-          }
-        }]
-      });
-    }
-  }).render('#paypal-button-container');
-</script>
+
         
         
     </main>
